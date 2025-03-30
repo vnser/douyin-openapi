@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Zimuoo\DouyinOpenapi\Api\Life\OutsideDistribution;
+namespace vnser\DouyinOpenapi\Api\Life\OutsideDistribution;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;

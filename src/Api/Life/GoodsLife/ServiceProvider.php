@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Zimuoo\DouyinOpenapi\Api\Life\GoodsLife;
+namespace vnser\DouyinOpenapi\Api\Life\GoodsLife;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;

@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Zimuoo\DouyinOpenapi;
+namespace vnser\DouyinOpenapi;
 
 use Symfony\Component\Cache\Adapter\FilesystemAdapter;
 use Symfony\Component\Cache\CacheItem;

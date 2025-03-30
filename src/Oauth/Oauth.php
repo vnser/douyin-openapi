@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Zimuoo\DouyinOpenapi\Oauth;
+namespace vnser\DouyinOpenapi\Oauth;
 
-use Zimuoo\DouyinOpenapi\DouyinClient;
-use Zimuoo\DouyinOpenapi\Support\Utils;
+use vnser\DouyinOpenapi\DouyinClient;
+use vnser\DouyinOpenapi\Support\Utils;
 
 class Oauth extends DouyinClient
 {

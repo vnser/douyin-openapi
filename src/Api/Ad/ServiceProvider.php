@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Zimuoo\DouyinOpenapi\Api\Ad;
+namespace vnser\DouyinOpenapi\Api\Ad;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;

@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Zimuoo\DouyinOpenapi;
+namespace vnser\DouyinOpenapi;
 
 use Ydg\FoudationSdk\ServiceContainer;
-use Zimuoo\DouyinOpenapi\Api\Ad\ServiceProvider;
+use vnser\DouyinOpenapi\Api\Ad\ServiceProvider;
 
 /**
  * @property Oauth\Oauth $oauth

@@ -1,8 +1,8 @@
 <?php
 
-namespace Zimuoo\DouyinOpenapi\Api\Ad;
+namespace vnser\DouyinOpenapi\Api\Ad;
 
-use Zimuoo\DouyinOpenapi\DouyinClient;
+use vnser\DouyinOpenapi\DouyinClient;
 
 
 //流量主

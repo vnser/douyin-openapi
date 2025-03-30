@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Zimuoo\DouyinOpenapi;
+namespace vnser\DouyinOpenapi;
 
-use Zimuoo\DouyinOpenapi\Support\Utils;
+use vnser\DouyinOpenapi\Support\Utils;
 use Ydg\FoudationSdk\FoundationApi;
 use Ydg\FoudationSdk\Traits\HasAttributes;
 

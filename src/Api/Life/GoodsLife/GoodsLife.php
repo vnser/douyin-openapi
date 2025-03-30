@@ -1,10 +1,10 @@
 <?php
 
 
-namespace Zimuoo\DouyinOpenapi\Api\Life\GoodsLife;
+namespace vnser\DouyinOpenapi\Api\Life\GoodsLife;
 
 
-use Zimuoo\DouyinOpenapi\DouyinClient;
+use vnser\DouyinOpenapi\DouyinClient;
 
 class GoodsLife extends DouyinClient
 {

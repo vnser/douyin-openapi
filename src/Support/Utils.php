@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Zimuoo\DouyinOpenapi\Support;
+namespace vnser\DouyinOpenapi\Support;
 
 use Psr\Http\Message\ResponseInterface;
 

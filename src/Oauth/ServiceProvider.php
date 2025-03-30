@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Zimuoo\DouyinOpenapi\Oauth;
+namespace vnser\DouyinOpenapi\Oauth;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;
