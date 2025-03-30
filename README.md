@@ -1,5 +1,5 @@
-本包是根据ydg/douyin-open-sdk修改而来，感谢作者的辛苦付出~
-本包是根据zimuoo/douyin-openapi修改而来，感谢作者的辛苦付出~
+- 本包是根据ydg/douyin-open-sdk修改而来，感谢作者的辛苦付出~
+- 本包是再次根据zimuoo/douyin-openapi修改而来，感谢作者的辛苦付出~
 
 #### 新增内容
 1，增加抖音来客券码核销功能
