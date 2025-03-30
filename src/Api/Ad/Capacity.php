@@ -9,13 +9,11 @@ use vnser\DouyinOpenapi\DouyinClient;
 class Capacity extends DouyinClient
 {
     /***
-     * @Notes:验券准备
+     * 流量主查询广告收入
      * @Interface certificate_prepare
      * @param $params
-     * 参数code 原始的抖音团购券码 (encrypted_data/code必须二选一)
      * @return array|null
      * @author: yijun
-     * @Time: 2023/11/24   4:55 下午
      */
     public function query_ad_income($params,$accessToken=''): ?array
     {
