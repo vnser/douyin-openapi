@@ -11,7 +11,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Zimuoo\\DouyinOpenapi\\": "src/"
+            "vnser\\DouyinOpenapi\\": "src/"
         }
     },
     "authors": [
