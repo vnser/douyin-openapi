@@ -13,9 +13,8 @@ class Capacity extends DouyinClient
      * @Interface certificate_prepare
      * @param $params
      * @return array|null
-     * @author: yijun
      */
-    public function query_ad_income($params,$accessToken=''): ?array
+    public function query_ad_income($params): ?array
     {
         return $this->get('/api/apps/v3/capacity/query_ad_income/', $params);
     }
