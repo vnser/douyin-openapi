@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace vnser\DouyinOpenapi\Support;
+namespace vring\DouyinOpenapi\Support;
 
 use Psr\Http\Message\ResponseInterface;
 

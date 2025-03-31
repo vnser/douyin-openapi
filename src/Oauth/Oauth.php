@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace vnser\DouyinOpenapi\Oauth;
+namespace vring\DouyinOpenapi\Oauth;
 
-use vnser\DouyinOpenapi\DouyinClient;
-use vnser\DouyinOpenapi\Support\Utils;
+use vring\DouyinOpenapi\DouyinClient;
+use vring\DouyinOpenapi\Support\Utils;
 
 class Oauth extends DouyinClient
 {

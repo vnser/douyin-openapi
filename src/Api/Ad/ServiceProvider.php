@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace vnser\DouyinOpenapi\Api\Ad;
+namespace vring\DouyinOpenapi\Api\Ad;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;

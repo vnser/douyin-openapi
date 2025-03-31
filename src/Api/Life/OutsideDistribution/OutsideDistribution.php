@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace vnser\DouyinOpenapi\Api\Life\OutsideDistribution;
+namespace vring\DouyinOpenapi\Api\Life\OutsideDistribution;
 
-use vnser\DouyinOpenapi\DouyinClient;
+use vring\DouyinOpenapi\DouyinClient;
 
 class OutsideDistribution extends DouyinClient
 {

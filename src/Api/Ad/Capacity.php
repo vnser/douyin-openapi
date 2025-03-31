@@ -1,8 +1,8 @@
 <?php
 
-namespace vnser\DouyinOpenapi\Api\Ad;
+namespace vring\DouyinOpenapi\Api\Ad;
 
-use vnser\DouyinOpenapi\DouyinClient;
+use vring\DouyinOpenapi\DouyinClient;
 
 
 //流量主

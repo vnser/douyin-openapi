@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace vnser\DouyinOpenapi;
+namespace vring\DouyinOpenapi;
 
 use Ydg\FoudationSdk\ServiceContainer;
-use vnser\DouyinOpenapi\Api\Ad\ServiceProvider;
+use vring\DouyinOpenapi\Api\Ad\ServiceProvider;
 
 /**
  * @property Oauth\Oauth $oauth

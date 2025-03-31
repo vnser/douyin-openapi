@@ -1,10 +1,10 @@
 <?php
 
 
-namespace vnser\DouyinOpenapi\Api\Life\GoodsLife;
+namespace vring\DouyinOpenapi\Api\Life\GoodsLife;
 
 
-use vnser\DouyinOpenapi\DouyinClient;
+use vring\DouyinOpenapi\DouyinClient;
 
 class GoodsLife extends DouyinClient
 {

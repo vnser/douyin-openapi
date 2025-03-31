@@ -1,5 +1,5 @@
 {
-    "name": "vnser/douyin-openapi",
+    "name": "vring/douyin-openapi",
     "description": "对接抖音开放平台的sdk",
     "license": "MIT",
     "keywords": [
@@ -11,13 +11,13 @@
     ],
     "autoload": {
         "psr-4": {
-            "vnser\\DouyinOpenapi\\": "src/"
+            "vring\\DouyinOpenapi\\": "src/"
         }
     },
     "authors": [
         {
-            "name": "yijun",
-            "email": "296528828@qq.com"
+            "name": "vring",
+            "email": "971626354@qq.com"
         }
     ],
     "require": {
@@ -26,11 +26,7 @@
         "ext-json": "*",
         "symfony/cache": "*"
     },
-    "require-dev": {
-        "friendsofphp/php-cs-fixer": "^3.12",
-        "phpunit/phpunit": "^9.5",
-        "vlucas/phpdotenv": "^5.5"
-    },
+
     "config": {
         "optimize-autoloader": true,
         "sort-packages": true

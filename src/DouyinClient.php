@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace vnser\DouyinOpenapi;
+namespace vring\DouyinOpenapi;
 
-use vnser\DouyinOpenapi\Support\Utils;
+use vring\DouyinOpenapi\Support\Utils;
 use Ydg\FoudationSdk\FoundationApi;
 use Ydg\FoudationSdk\Traits\HasAttributes;
 

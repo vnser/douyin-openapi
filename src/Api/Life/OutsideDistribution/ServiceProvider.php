@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace vnser\DouyinOpenapi\Api\Life\OutsideDistribution;
+namespace vring\DouyinOpenapi\Api\Life\OutsideDistribution;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;

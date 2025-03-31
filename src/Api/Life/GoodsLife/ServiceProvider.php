@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace vnser\DouyinOpenapi\Api\Life\GoodsLife;
+namespace vring\DouyinOpenapi\Api\Life\GoodsLife;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;

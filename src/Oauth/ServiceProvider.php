@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace vnser\DouyinOpenapi\Oauth;
+namespace vring\DouyinOpenapi\Oauth;
 
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;
