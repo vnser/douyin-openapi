@@ -24,4 +24,20 @@ class Oauth extends DouyinClient
         return Utils::jsonResponseToArray($response);
     }
 
+    public function code2Session($code)
+    {
+        $appid = $this->offsetGet('appid');
+        $appsecret = $this->offsetGet('appsecret');
+        $this->setBaseUri('https://developer.toutiao.com');
+        $res = $this->getHttpClient()->json($this->getUri('/api/apps/v2/jscode2session'), [
+            'appid'=>$appid,
+            'secret'=>$appsecret,
+            'code'=>$code,
+            'anonymous_code'=>''
+        ]);
+        return Utils::jsonResponseToArray($res);
+//        print_r(  Utils::jsonResponseToArray($res));
+//        print_r($this->offsetGet('appid'));
+
+    }
 }

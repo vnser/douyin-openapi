@@ -6,7 +6,7 @@ namespace vring\DouyinOpenapi;
 use Symfony\Component\Cache\Adapter\FilesystemAdapter;
 use Symfony\Component\Cache\CacheItem;
 
-class DouyouApp
+class DouyinApp
 {
 
     /**
@@ -18,7 +18,7 @@ class DouyouApp
     static public function make($appid, $appsecret)
     {
         $accessToken = self::getAccessToken($appid, $appsecret);
-        return new Douyin(['access_token' => $accessToken]);
+        return new Douyin(['access_token' => $accessToken, 'appid' => $appid,'appsecret'=>$appsecret]);
     }
 
     /**

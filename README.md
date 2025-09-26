@@ -6,9 +6,10 @@
 - 其他代码优化
 - 内置自动获取access_token，优化access_token缓存机制
 - 增加流量主广告板块，
+
 ````php
 <?php
-$dy = \vring\DouyinOpenapi\DouyouApp::make('ttbd1ecba05f01','82ac26bc7d1d592755110a9fd40183248c520');
+$dy = \vring\DouyinOpenapi\DouyinApp::make('ttbd1ecba05f01','82ac26bc7d1d592755110a9fd40183248c520');
 $dy->ad->query_ad_income();
 ````
 
