@@ -14,6 +14,6 @@ class PhoneNumber extends DouyinClient
      */
     public function getUserPhoneNumber($code): ?array
     {
-        return $this->post('/api/apps/v1/get_phonenumber_info/', ['code'=>$code]);
+        return $this->json('/api/apps/v1/get_phonenumber_info/', ['code'=>$code]);
     }
 }
