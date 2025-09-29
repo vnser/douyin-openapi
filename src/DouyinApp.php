@@ -15,10 +15,10 @@ class DouyinApp
      * @return Douyin
      * @throws \Exception
      */
-    static public function make($appid, $appsecret)
+    static public function make($config)
     {
-        $accessToken = self::getAccessToken($appid, $appsecret);
-        return new Douyin(['access_token' => $accessToken, 'appid' => $appid,'appsecret'=>$appsecret]);
+        $accessToken = self::getAccessToken($config['appi'],$config['appsecret']);
+        return new Douyin(['access_token' => $accessToken, ...$config]);
     }
 
     /**

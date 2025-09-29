@@ -1,0 +1,38 @@
+<?php
+// 私钥
+$privateKey = <<<EOD
+-----BEGIN RSA PRIVATE KEY-----
+MIIEpAIBAAKCAQEAuMsO02s9bCbL3sT5D0iG4PfKuDcDLry1gBoCAFlg+Mnl79+I
+n3I4w23/PaAwM9N6SR26VoZJxhI0yMLspwVFCveqE2XdS5xjwaU0kwtc8LC/9PNR
+kpWdiVmJ0emMfKxJd+uSGhhh6zAkWq+r0Fswe/Wq2jCMV6Co6PYxKuB2Sqbb+ciJ
+K8Dy1E2cqWzv3FYMY2TLoSIxNvUe3/7L5nJPlSWxvTqNz68dXYwo7uBB6wWDX+0m
+Uq2uWd/2KdoI8Fmbyw77srYxoTaleBfvipgnKkXiKuksiTggSb59b7I+t97n5YFk
+Ec6afp0yoBiakiaUfVQ+eW09r2Chw++jQ9S+0QIDAQABAoIBABxKMdXZ+AhDlDhh
+bUOStdtg8+7ptRoFl7+pu560EC1mM0ZasT6/rML2ZvnXOSnl+TWSUIGIg2jIRr5p
+YPNc0ioQqj/X+13k7jyp/vd36N2MIYbtbRKExx5Mz9WL7I71jTXHoZFPJEZuE1Ky
+zBnUrAJ+JI7Mmd+cX99yOSq4PEPHLvG0APoyxbCyHht5Lb+fBHlzrmP/Vl43hXCV
+FhSr/uf92wl1fyFJGMSQbvkH/hFC24HoUVycjDHT2vS/+k2ycz0+8tjfWfXh6QeE
+ijvmGHOZXofFCmd8vhgCDulBZ9ZaZJMvgHIBUX2qt7UImL+1Uw3cIF8nIS3u3hWz
+QJQKj0ECgYEA56ZPI9M27rnqGe/ah14GWLM4A9N9iRiZQej6CYByDYlxg7/4pBr6
+NGurTajGlhdqbIfViSZqFty6MTDQkh2yQ4kzFDUFJuncqQNlchp3mFKdJHxxivUl
+oahj6YwSqOzY4Jioxvv0fv59M/oU1bpHjpVlRNSEWOazrp8o3rd5exkCgYEAzDfX
+iCTtU4weFlGWdaOfFEDlhNUgUozLRhzlaLdyCy/kLJPwrlyYR6SCYiNzYdmNi9cM
+8QUF5kWmPzqjyEcQI8dt7cW+PN/SpxGucHb7ho69VDIWt7z4ZxXn9nlknaHv7wUY
+ARgniQPBcvs6z+JBFhqT50QDcni1N2jRh0B4EHkCgYBiRvB0Znt7tGxZLKUtoPpY
+T1CIbwVnUIRUrh7GQTQiAhmip6M5HCjibHt0qxH1Q2HnQYmaci24HVTw4aDbHLYw
+aNi+ze+tnrH7EnHLgucSPJpmjFUveunIN8SLpN2VxUYNozaXlPUZm6ZKkuKb+je5
+ijA4j2DGxrmcb/HK61QioQKBgQCRHMkZo+vEJ1el0lnQw/ChKrAtIGi0X/l9m8Dk
+FR6DlodTqdgnfgJzPhGr/LbbfASZrrkydrhHdYx5d4i0ItL0KZ0SjSXuCbmdH/JN
+Vi7K4ZjlQCZmb3AviCBpQr9dR5m/xWXWOTy2nqWSt7SFzackNsSMXAb7C4zxj5j7
+u7LVOQKBgQCk9/5U6EB6VO/v7OGgAYu1ORIzUxybsGgFAVawTWMSglW+fAE5QNJg
+OGIzjaN8B+YuKadTcJClyF+ev4YLQH2SKZflGZ4Vlg94zyvoxrNVdsVbs+A5lfvg
+6K38q4FUdMfggAUVYnplNRSlA3eRoDiX4EanMtThODGnPyg9/JNmnQ==
+-----END RSA PRIVATE KEY-----
+EOD;
+// 密文（Base64）
+$encryptedData = 'JBCfSOgjs3ESZsLlfKlO+7K7v44zL+aaIkQQzp/fDJzhvF4LFhXhB+Eh52JWmhxu4Z9W4my5icDwnMM2UDJxBBoynDkOX4JK6C3UpRtjy4m0jiGUBIHresxaH3L98jFxtbZgEyfRFAliomQfmsxfxyJChvW/pJljQwm9uKhtiwM3+Tu2ivNLJsgd2ttLN9M+b6AWpcxQ1LNji2wDgFeh6PKI8wipn4CXCjusaiehWwDZ27cLQlD5mbAezR9qzRkAWz2WhYuXUukszOAI+QZEOUREYnnmHb/MUw4vXO+bmIoaJOLVFXEIdBgervyRTJ07y+k9EYFk/acaln5q2ZKidQ==';
+// Base64 转为二进制
+$encrypted = base64_decode($encryptedData);
+// 私钥解密
+openssl_private_decrypt($encrypted, $decrypted, $privateKey, OPENSSL_PKCS1_PADDING);
+echo "Decrypted data: " . $decrypted . PHP_EOL;

@@ -17,4 +17,13 @@ class Utils
     {
         return json_decode($response->getBody()->getContents(), true);
     }
+
+    public static function rsaDecryptData($privateKey, $encryptedData): string
+    {
+          $encrypted = base64_decode($encryptedData);
+// 私钥解密
+        openssl_private_decrypt($encrypted, $decrypted, $privateKey, OPENSSL_PKCS1_PADDING);
+        return $decrypted;
+//        return sha1($secret . $timestamp . $nonce . $body);
+    }
 }
