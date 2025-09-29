@@ -17,7 +17,7 @@ class DouyinApp
      */
     static public function make($config)
     {
-        $accessToken = self::getAccessToken($config['appi'],$config['appsecret']);
+        $accessToken = self::getAccessToken($config['appid'],$config['appsecret']);
         return new Douyin(['access_token' => $accessToken, ...$config]);
     }
 
