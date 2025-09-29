@@ -1,15 +1,10 @@
 <?php
-
-
 require_once __DIR__ . '/../vendor/autoload.php';
 //use Zimuoo\DouyinOpenapi\Douyin;
-
 //    $res = '';
-
 //$dy = \vring\DouyinOpenapi\DouyouApp::make('ttbd1ecba05f01','82ac26bc7d1d592755110a9fd40183248c520');
 //$dy->ad->query_ad_income();
-
-$dy = \vring\DouyinOpenapi\DouyinApp::make(['appid'=>'tt58142ea9c719e98201','appsecret'=>'92083e8fc74eaad7f2af8a1ca3698e409b41b931','private_key'=>'-----BEGIN RSA PRIVATE KEY-----
+$dy = \vring\DouyinOpenapi\DouyinApp::make(['appid' => 'tt58142ea9c719e98201', 'appsecret' => '92083e8fc74eaad7f2af8a1ca3698e409b41b931', 'private_key' => '-----BEGIN RSA PRIVATE KEY-----
 MIIEpAIBAAKCAQEAuMsO02s9bCbL3sT5D0iG4PfKuDcDLry1gBoCAFlg+Mnl79+I
 n3I4w23/PaAwM9N6SR26VoZJxhI0yMLspwVFCveqE2XdS5xjwaU0kwtc8LC/9PNR
 kpWdiVmJ0emMfKxJd+uSGhhh6zAkWq+r0Fswe/Wq2jCMV6Co6PYxKuB2Sqbb+ciJ
@@ -35,5 +30,5 @@ Vi7K4ZjlQCZmb3AviCBpQr9dR5m/xWXWOTy2nqWSt7SFzackNsSMXAb7C4zxj5j7
 u7LVOQKBgQCk9/5U6EB6VO/v7OGgAYu1ORIzUxybsGgFAVawTWMSglW+fAE5QNJg
 OGIzjaN8B+YuKadTcJClyF+ev4YLQH2SKZflGZ4Vlg94zyvoxrNVdsVbs+A5lfvg
 6K38q4FUdMfggAUVYnplNRSlA3eRoDiX4EanMtThODGnPyg9/JNmnQ==
------END RSA PRIVATE KEY-----','payment'=>[]]);
+-----END RSA PRIVATE KEY-----', 'payment' => []]);
 //$a = $dy->oauth->code2Session('4BrAgVF7Ufp0G1MiTpnQhfOozadmZTdv_Yn1Eg-aDz-_aftfmS2NUEtpKeBEPAYfFeIrI_19h0qIobGdpqVHCy-egMhtVPzjK3Rs8ge1rAc_VfWDqEbjEhoHbVw');

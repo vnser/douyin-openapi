@@ -22,6 +22,18 @@ class Payment extends DouyinClient
     }
 
 
+    //退款
+    public function createRefund($data)
+    {
+        $data = array_merge([
+            "app_id"       => $this->offsetGet('appid'),
+        ],$data);
+        $data['sign'] = $this->sign($data);
+        return $this->json('/api/apps/ecpay/v1/create_refund',$data);
+
+    }
+
+    #
     public function createOrder(array $data): array
     {
         $data = array_merge([

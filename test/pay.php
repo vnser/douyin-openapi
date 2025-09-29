@@ -27,7 +27,7 @@ u7LVOQKBgQCk9/5U6EB6VO/v7OGgAYu1ORIzUxybsGgFAVawTWMSglW+fAE5QNJg
 OGIzjaN8B+YuKadTcJClyF+ev4YLQH2SKZflGZ4Vlg94zyvoxrNVdsVbs+A5lfvg
 6K38q4FUdMfggAUVYnplNRSlA3eRoDiX4EanMtThODGnPyg9/JNmnQ==
 -----END RSA PRIVATE KEY-----','payment'=>['salt'=>'WCUdnjZWzMkBnkicasnPLafUejCRs8H7OpwTAMtD','is_sandbox'=>true]]);
-$res = $dy->payment->createOrder([
+/*$res = $dy->payment->createOrder([
 //    "app_id"       => $this->offsetGet('appid'),
     "out_order_no" => "out_order_no_1",
     "total_amount" => 12800,
@@ -37,5 +37,16 @@ $res = $dy->payment->createOrder([
 //            "sign"         => "d716027b7b5a91a3319a061d818cc9cc",
     "cp_extra"     => "一些附加信息",
             "notify_url"   => "https://api.iiyyeixin.com/Notify/bytedancePay",
+]);*/
+$a = $dy->payment->createRefund([
+//    "app_id"        => "tt07e3715e98c9aac0",
+    "out_order_no"  => "7056505317450041644",
+    "out_refund_no" => "401020220222383672284706009088",
+    "reason"        => "发错地址退款重新下单",
+    "refund_amount" => 12800,
+//    "sign"          => "d716027b7b5a91a3319a061d818cc9cc",
+//    "cp_extra"      => "一些附加信息",
+    "notify_url"    => "https://douyin.com/callback",
 ]);
-print_r($res);
+print_r($a);
+//print_r($res);
