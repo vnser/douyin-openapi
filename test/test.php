@@ -35,9 +35,5 @@ Vi7K4ZjlQCZmb3AviCBpQr9dR5m/xWXWOTy2nqWSt7SFzackNsSMXAb7C4zxj5j7
 u7LVOQKBgQCk9/5U6EB6VO/v7OGgAYu1ORIzUxybsGgFAVawTWMSglW+fAE5QNJg
 OGIzjaN8B+YuKadTcJClyF+ev4YLQH2SKZflGZ4Vlg94zyvoxrNVdsVbs+A5lfvg
 6K38q4FUdMfggAUVYnplNRSlA3eRoDiX4EanMtThODGnPyg9/JNmnQ==
------END RSA PRIVATE KEY-----']);
+-----END RSA PRIVATE KEY-----','payment'=>[]]);
 //$a = $dy->oauth->code2Session('4BrAgVF7Ufp0G1MiTpnQhfOozadmZTdv_Yn1Eg-aDz-_aftfmS2NUEtpKeBEPAYfFeIrI_19h0qIobGdpqVHCy-egMhtVPzjK3Rs8ge1rAc_VfWDqEbjEhoHbVw');
-$a = $dy->phone_number->getUserPhoneNumber('hr25czdAU/hJahuH5Xi8ubPv5HBets/lkn7GVj+LrVKnU+qqO93xjhlU2wVH+fXiijmryYrkD1Yu6PaTslWMVVtK5Ipjd4LN9tnM5Aiu/4pL530liUO0uXk8I+N85AwXTGlg3yE1hwwTRE20');
-//print_r($a);
-//$a = $dy->privacy_setting->add([]);
-print_r($a);

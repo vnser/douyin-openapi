@@ -31,7 +31,7 @@ class DouyinApp
     static public function getAccessToken($appid, $appsecret)
     {
         $cache = new FilesystemAdapter();
-        $kname = 'dyopenaccess_token1_' . $appid;
+        $kname = 'dyopenaccess_token_' . $appid;
         $accessToken = $cache->getItem($kname);
         if (!$accessToken->isHit()) {
             $app = new Douyin();

@@ -1,7 +1,6 @@
 <?php
-// 私钥
-$privateKey = <<<EOD
------BEGIN RSA PRIVATE KEY-----
+require_once __DIR__ . '/../vendor/autoload.php';
+$dy = \vring\DouyinOpenapi\DouyinApp::make(['appid'=>'tt58142ea9c719e98201','appsecret'=>'92083e8fc74eaad7f2af8a1ca3698e409b41b931','private_key'=>'-----BEGIN RSA PRIVATE KEY-----
 MIIEpAIBAAKCAQEAuMsO02s9bCbL3sT5D0iG4PfKuDcDLry1gBoCAFlg+Mnl79+I
 n3I4w23/PaAwM9N6SR26VoZJxhI0yMLspwVFCveqE2XdS5xjwaU0kwtc8LC/9PNR
 kpWdiVmJ0emMfKxJd+uSGhhh6zAkWq+r0Fswe/Wq2jCMV6Co6PYxKuB2Sqbb+ciJ
@@ -27,12 +26,16 @@ Vi7K4ZjlQCZmb3AviCBpQr9dR5m/xWXWOTy2nqWSt7SFzackNsSMXAb7C4zxj5j7
 u7LVOQKBgQCk9/5U6EB6VO/v7OGgAYu1ORIzUxybsGgFAVawTWMSglW+fAE5QNJg
 OGIzjaN8B+YuKadTcJClyF+ev4YLQH2SKZflGZ4Vlg94zyvoxrNVdsVbs+A5lfvg
 6K38q4FUdMfggAUVYnplNRSlA3eRoDiX4EanMtThODGnPyg9/JNmnQ==
------END RSA PRIVATE KEY-----
-EOD;
-// 密文（Base64）
-$encryptedData = 'JBCfSOgjs3ESZsLlfKlO+7K7v44zL+aaIkQQzp/fDJzhvF4LFhXhB+Eh52JWmhxu4Z9W4my5icDwnMM2UDJxBBoynDkOX4JK6C3UpRtjy4m0jiGUBIHresxaH3L98jFxtbZgEyfRFAliomQfmsxfxyJChvW/pJljQwm9uKhtiwM3+Tu2ivNLJsgd2ttLN9M+b6AWpcxQ1LNji2wDgFeh6PKI8wipn4CXCjusaiehWwDZ27cLQlD5mbAezR9qzRkAWz2WhYuXUukszOAI+QZEOUREYnnmHb/MUw4vXO+bmIoaJOLVFXEIdBgervyRTJ07y+k9EYFk/acaln5q2ZKidQ==';
-// Base64 转为二进制
-$encrypted = base64_decode($encryptedData);
-// 私钥解密
-openssl_private_decrypt($encrypted, $decrypted, $privateKey, OPENSSL_PKCS1_PADDING);
-echo "Decrypted data: " . $decrypted . PHP_EOL;
+-----END RSA PRIVATE KEY-----','payment'=>['salt'=>'WCUdnjZWzMkBnkicasnPLafUejCRs8H7OpwTAMtD','is_sandbox'=>true]]);
+$res = $dy->payment->createOrder([
+//    "app_id"       => $this->offsetGet('appid'),
+    "out_order_no" => "out_order_no_1",
+    "total_amount" => 12800,
+            "subject"      => "测试商品",
+            "body"         => "测试商品",
+    "valid_time"   => 180,
+//            "sign"         => "d716027b7b5a91a3319a061d818cc9cc",
+    "cp_extra"     => "一些附加信息",
+            "notify_url"   => "https://api.iiyyeixin.com/Notify/bytedancePay",
+]);
+print_r($res);

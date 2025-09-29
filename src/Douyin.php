@@ -14,6 +14,7 @@ use vring\DouyinOpenapi\Api\Ad\ServiceProvider;
  * @property Api\Ad\Capacity $ad
  * @property Api\PhoneNumber\PhoneNumber $phone_number
  * @property Api\PrivacySetting $privacy_setting
+ * @property Payment\Payment $payment
  */
 class Douyin extends ServiceContainer
 {
@@ -23,6 +24,7 @@ class Douyin extends ServiceContainer
         Api\Life\GoodsLife\ServiceProvider::class,
         ServiceProvider::class,
         \vring\DouyinOpenapi\Api\PhoneNumber\ServiceProvider::class,
-        \vring\DouyinOpenapi\Api\ServiceProvider::class
+        \vring\DouyinOpenapi\Api\ServiceProvider::class,
+        \vring\DouyinOpenapi\Payment\ServiceProvider::class
     ];
 }
