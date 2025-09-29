@@ -36,14 +36,6 @@ class Oauth extends DouyinClient
             'anonymous_code'=>''
         ]);
         $res =  Utils::jsonResponseToArray($res);
-        if ($res['err_no'] != 0){
-            $data = json_decode(Utils::rsaDecryptData($this->offsetGet('private_key'),$res['data']),true);
-            return [
-                ...$res,'data'=>$data
-//                'err_tips'=>$res['err_tips'],
-//                'data'=>$data
-            ];
-        }
         return $res;
 //        print_r(  Utils::jsonResponseToArray($res));
 //        print_r($this->offsetGet('appid'));

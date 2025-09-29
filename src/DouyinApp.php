@@ -18,7 +18,7 @@ class DouyinApp
     static public function make($config)
     {
         $accessToken = self::getAccessToken($config['appid'],$config['appsecret']);
-        return new Douyin(['access_token' => $accessToken, ...$config]);
+        return new Douyin(array_merge(['access_token' => $accessToken ],$config));
     }
 
     /**
@@ -31,7 +31,7 @@ class DouyinApp
     static public function getAccessToken($appid, $appsecret)
     {
         $cache = new FilesystemAdapter();
-        $kname = 'dyopenaccess_token_' . $appid;
+        $kname = 'dyopenaccess_token1_' . $appid;
         $accessToken = $cache->getItem($kname);
         if (!$accessToken->isHit()) {
             $app = new Douyin();
